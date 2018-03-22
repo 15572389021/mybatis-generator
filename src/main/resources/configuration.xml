@@ -6,18 +6,6 @@
     <item name="username" value="root" description="用户名"/>
     <item name="password" value="root" description="密码"/>
   </jdbc>
-
-  <!--  baseDir：文件存放的根目录
-        desc：实体描述
-  -->
-
- <!-- <category name="tables">
-    <table name="user" description="需要工具生成的表" baseDir="C:\Users\lewis\Desktop\code" schemaPattern="root">
-      <entity name="User" desc="用户" path=""/>
-      <mapper path="mapper"/>
-      <dao package="com.zhoulychn.dao.base" path="dao"/>
-     </table>
-  </category>-->
   
   <category name="base" description="基础配置">
     <item name="database" value="mysql" description="数据库"/>
@@ -29,12 +17,12 @@
   </category>
   
   <category name="entity" description="实体配置">
-    <item name="package" value="org.qyk.dms.person.entity" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.entity" description="包路径"/>
     <item name="path" value="entity" description="实体存放的路径，相对于baseDir"/>
   </category>
   
   <category name="dao" description="dao配置">
-    <item name="package" value="org.qyk.dms.person.dao" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.dao" description="包路径"/>
     <item name="path" value="dao" description="dao存放的路径，相对于baseDir"/>
   </category>
   
@@ -43,37 +31,37 @@
   </category>
   
   <category name="vo" description="vo文件配置">
-    <item name="package" value="org.qyk.person.spi.vo" description="包路径"/>
+    <item name="package" value="com.zhoulychn.person.spi.vo" description="包路径"/>
     <item name="path" value="vo" description="vo存放的路径，相对于baseDir"/>
   </category>
   
   <category name="manager" description="manager配置">
-    <item name="package" value="org.qyk.dms.person.manager" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.manager" description="包路径"/>
     <item name="path" value="manager" description="实体存放的路径，相对于baseDir"/>
   </category>
   
   <category name="managerImpl" description="managerImpl配置">
-    <item name="package" value="org.qyk.dms.person.manager.impl" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.manager.impl" description="包路径"/>
     <item name="path" value="manager/impl" description="managerImpl存放的路径，相对于baseDir"/>
   </category>
   
   <category name="command" description="command配置">
-    <item name="package" value="org.qyk.person.spi.command" description="包路径"/>
+    <item name="package" value="com.zhoulychn.person.spi.command" description="包路径"/>
     <item name="path" value="command" description="command存放的路径，相对于baseDir"/>
   </category>
   
   <category name="service" description="service配置">
-    <item name="package" value="org.qyk.person.spi" description="包路径"/>
+    <item name="package" value="com.zhoulychn.person.spi" description="包路径"/>
     <item name="path" value="service" description="service存放的路径，相对于baseDir"/>
   </category>
   
   <category name="serviceImpl" description="serviceImpl配置">
-    <item name="package" value="org.qyk.dms.person.service.impl" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.service.impl" description="包路径"/>
     <item name="path" value="service/impl" description="实体存放的路径，相对于baseDir"/>
   </category>
   
   <category name="serviceTest" description="service测试类配置">
-    <item name="package" value="org.qyk.dms.person.service.impl" description="包路径"/>
+    <item name="package" value="com.zhoulychn.dms.person.service.impl" description="包路径"/>
     <item name="path" value="service/impl" description="实体存放的路径，相对于baseDir"/>
   </category>
 </system>
