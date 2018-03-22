@@ -9,6 +9,7 @@ import com.winit.generator.handler.impl.VoHandler;
 import com.winit.generator.model.VoInfo;
 
 public class VoTask extends AbstractApplicationTask {
+
     private static String VO_FTL = "template/Vo.ftl";
     
     @SuppressWarnings("unchecked")

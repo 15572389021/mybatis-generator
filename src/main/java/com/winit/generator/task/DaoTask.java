@@ -3,12 +3,12 @@ package com.winit.generator.task;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.winit.generator.model.DaoInfo;
 import com.winit.generator.Constants;
 import com.winit.generator.framework.AbstractApplicationTask;
 import com.winit.generator.framework.context.ApplicationContext;
 import com.winit.generator.handler.BaseHandler;
 import com.winit.generator.handler.impl.DaoHandler;
-import com.winit.generator.model.DaoInfo;
 import com.winit.generator.model.MapperInfo;
 
 public class DaoTask extends AbstractApplicationTask {

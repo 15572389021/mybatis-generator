@@ -9,17 +9,17 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.winit.generator.model.TableInfo;
+import com.winit.generator.util.PropertyUtil;
+import com.winit.generator.util.StringUtil;
 import com.winit.generator.Constants;
 import com.winit.generator.config.Configuration;
 import com.winit.generator.framework.AbstractApplicationTask;
 import com.winit.generator.framework.context.ApplicationContext;
 import com.winit.generator.model.ColumnInfo;
 import com.winit.generator.model.EntityInfo;
-import com.winit.generator.model.TableInfo;
-import com.winit.generator.util.PropertyUtil;
-import com.winit.generator.util.StringUtil;
 
-public class CombineInfoTask extends AbstractApplicationTask {
+public class CombineTask extends AbstractApplicationTask {
 
     @SuppressWarnings("unchecked")
     @Override

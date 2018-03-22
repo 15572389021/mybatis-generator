@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.zip.Deflater;
 
+import com.winit.generator.util.PropertyUtil;
+import com.winit.generator.util.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Appender;
 import org.apache.logging.log4j.core.Layout;
@@ -21,28 +23,13 @@ import org.apache.logging.log4j.core.config.Configuration;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 
 import com.winit.generator.framework.Application;
-import com.winit.generator.util.PropertyUtil;
-import com.winit.generator.util.StringUtil;
 
 /**
- * ClassName:LogFactory. <br/>
  * 日志工厂.
- * <p/>
+ * 
  * 调用示例：在应用程序任务中获取日志的方法
- * 
- * <pre>
- * protected boolean doInternal(ApplicationTaskContext context) throws ApplicationException {
- *     context.getLogger().info("====================Demo Task Perform===========================");
- *     return false;
- * }
- * </pre>
- * 
- * Date: 2013年10月16日 下午4:12:02 <br/>
- * 
- * @author qiyongkang
- * @version 1.0.0
- * @since JDK 1.6
  */
+
 public abstract class LogFactory {
 
     /**
@@ -103,7 +90,6 @@ public abstract class LogFactory {
     /**
      * getApplicationSysLogger: 获取一个应用程序系统级日志记录对象. <br/>
      * 
-     * @author qiyongkang
      * @return 应用程序系统级日志记录对象
      * @since JDK 1.6
      */
@@ -114,7 +100,6 @@ public abstract class LogFactory {
     /**
      * getApplicationLogger: 获取一个应用程序日志记录对象. <br/>
      * 
-     * @author qiyongkang
      * @param applicationId
      *            应用程序ID字符串描述
      * @return 应用程序日志记录对象
@@ -133,7 +118,6 @@ public abstract class LogFactory {
     /**
      * getApplicationTaskLogger: 获取一个应用程序任务日志记录对象. <br/>
      * 
-     * @author qiyongkang
      * @param applicationTaskId
      *            应用程序任务ID字符串描述
      * @param applicationId
@@ -154,8 +138,7 @@ public abstract class LogFactory {
 
     /**
      * getApplicationLogDirPath: 获取应用程序日志文件夹路径. <br/>
-     * 
-     * @author qiyongkang
+     *
      * @param applicationId
      *            应用程序ID字符串描述
      * @return 应用程序日志文件夹路径
@@ -170,8 +153,7 @@ public abstract class LogFactory {
     /**
      * getApplicationLogDirPath: 获取应用程序日志文件夹路径. <br/>
      * 
-     * @author qiyongkang
-     * @param applicationId
+      
      *            应用程序ID字符串描述
      * @return 应用程序日志文件夹路径
      * @since JDK 1.6
@@ -183,7 +165,7 @@ public abstract class LogFactory {
     /**
      * getLogRootDir: 日志根目录. <br/>
      * 
-     * @author qiyongkang
+      
      * @return
      * @since JDK 1.6
      */
@@ -196,7 +178,7 @@ public abstract class LogFactory {
     /**
      * getLogApplicationLayout: 获取应用程序日志的输出格式，应用程序和应用程序任务公用一种日志输出格式. <br/>
      * 
-     * @author qiyongkang
+      
      * @return 应用程序日志输出格式
      * @since JDK 1.6
      */
@@ -208,7 +190,7 @@ public abstract class LogFactory {
     /**
      * getLogApplicationFileSize: 获取应用程序日志的文件大小. <br/>
      * 
-     * @author qiyongkang
+      
      * @return 应用程序日志的文件大小
      * @since JDK 1.6
      */
@@ -220,7 +202,7 @@ public abstract class LogFactory {
     /**
      * getLogApplicationTaskFileSize: 获取应用程序任务日志的文件大小. <br/>
      * 
-     * @author qiyongkang
+      
      * @return 应用程序任务日志的文件大小
      * @since JDK 1.6
      */
@@ -233,7 +215,7 @@ public abstract class LogFactory {
     /**
      * createLogger: 创建一个log4j的日志对象. <br/>
      * 
-     * @author qiyongkang
+      
      * @param name
      *            日志对象名称
      * @param fileName

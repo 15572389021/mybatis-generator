@@ -4,16 +4,16 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.winit.generator.model.DaoInfo;
+import com.winit.generator.util.PropertyUtil;
 import com.winit.generator.Constants;
 import com.winit.generator.config.Configuration;
 import com.winit.generator.framework.AbstractApplicationTask;
 import com.winit.generator.framework.context.ApplicationContext;
 import com.winit.generator.handler.BaseHandler;
 import com.winit.generator.handler.impl.EntityHandler;
-import com.winit.generator.model.DaoInfo;
 import com.winit.generator.model.EntityInfo;
 import com.winit.generator.model.VoInfo;
-import com.winit.generator.util.PropertyUtil;
 
 public class EntityTask extends AbstractApplicationTask {
     private static String ENTITY_FTL = "template/Entity.ftl";

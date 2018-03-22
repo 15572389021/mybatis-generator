@@ -8,7 +8,7 @@ public class StringUtil {
      * 
      * isEmpty:判断字符串是否为空. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param str
      * @return
      * @since JDK 1.6
@@ -25,7 +25,7 @@ public class StringUtil {
      * 
      * subBySplit:根据分隔符截取字符串. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param split
      * @return
      * @since JDK 1.6
@@ -42,7 +42,7 @@ public class StringUtil {
     /**
      * upperFirst: 将字符串的首字母转换为大写. <br/>
      * 
-     * @author qiyongkang
+     * @author 
      * @param str
      *            要转换的字符串
      * @return 转换之后的字符串

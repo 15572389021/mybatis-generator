@@ -23,10 +23,6 @@ import org.codehaus.jackson.map.ObjectMapper;
  * ClassName:JsonHelper <br/>
  * Function: Json工具类. <br/>
  * Date:     2017年2月23日 下午3:44:17 <br/>
- * @author   qiyongkang
- * @version
- * @since    JDK 1.6
- * @see
  */
 public class JsonHelper {
 private static Logger logger = LogManager.getLogger(JsonHelper.class);

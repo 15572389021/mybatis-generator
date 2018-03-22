@@ -20,7 +20,7 @@ public class EntityHandler extends BaseHandler<EntityInfo> {
     }
     
     @Override
-    public void combileParams(EntityInfo entityInfo) {
+    public void combineParams(EntityInfo entityInfo) {
         this.param.put("packageStr", entityInfo.getEntityPackage());
         StringBuilder sb = new StringBuilder();
         for (String str : entityInfo.getImports()) {

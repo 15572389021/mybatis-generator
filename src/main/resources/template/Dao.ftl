@@ -25,6 +25,7 @@ ${importStr}
  */
 @MyBatisRepo
 public interface ${className} extends MyBatisPageRepo<${entityClassName}, Serializable> {
+
     long insert${entityName}(${entityClassName} entity);
     
     Long insertBatch(@Param("list")List<${entityClassName}> list);

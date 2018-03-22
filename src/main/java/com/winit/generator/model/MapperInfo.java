@@ -3,11 +3,7 @@ package com.winit.generator.model;
 
 public class MapperInfo {
     
-    /**
-     * XXXMapper.xml
-     */
     private String fileName;
-    
     
     private String namespace;
     

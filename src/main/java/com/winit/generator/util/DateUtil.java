@@ -20,10 +20,6 @@ import java.util.Date;
  * Reason: TODO ADD REASON. <br/>
  * Date: 2015年12月25日 下午3:45:56 <br/>
  * 
- * @author qiyongkang
- * @version
- * @since JDK 1.6
- * @see
  */
 public class DateUtil {
     public static String PATTERN_YMD = "yyyy-MM-dd";

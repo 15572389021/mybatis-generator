@@ -2,9 +2,9 @@ package com.winit.generator.handler.impl;
 
 import java.io.File;
 
+import com.winit.generator.model.DaoInfo;
 import com.winit.generator.config.Configuration;
 import com.winit.generator.handler.BaseHandler;
-import com.winit.generator.model.DaoInfo;
 
 
 public class DaoHandler extends BaseHandler<DaoInfo> {
@@ -18,7 +18,7 @@ public class DaoHandler extends BaseHandler<DaoInfo> {
     }
     
     @Override
-    public void combileParams(DaoInfo info) {
+    public void combineParams(DaoInfo info) {
         this.param.put("packageStr", info.getPackageStr());
         this.param.put("importStr", info.getImportStr());
         this.param.put("entityDesc", info.getEntityInfo().getEntityDesc());

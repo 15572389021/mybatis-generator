@@ -32,11 +32,6 @@ import org.dom4j.io.XMLWriter;
  * Function: TODO ADD FUNCTION. <br/>
  * Reason: TODO ADD REASON. <br/>
  * Date: 2017年2月16日 下午7:03:25 <br/>
- * 
- * @author qiyongkang
- * @version
- * @since JDK 1.6
- * @see
  */
 public class FileHelper {
 

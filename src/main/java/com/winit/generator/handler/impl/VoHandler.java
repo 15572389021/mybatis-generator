@@ -21,7 +21,7 @@ public class VoHandler extends BaseHandler<VoInfo> {
     }
 
     @Override
-    public void combileParams(VoInfo info) {
+    public void combineParams(VoInfo info) {
         EntityInfo entityInfo = info.getEntityInfo();
         this.param.put("packageStr", info.getPackageStr());
         StringBuilder sb = new StringBuilder();

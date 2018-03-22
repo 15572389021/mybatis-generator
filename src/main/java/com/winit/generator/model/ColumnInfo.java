@@ -1,10 +1,15 @@
 package com.winit.generator.model;
 
 public class ColumnInfo {
+
     private String name;
+
     private String type;
+
     private String remark;
+
     private int len;
+
     private int precision;
     
     public int getLen() {

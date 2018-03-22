@@ -8,15 +8,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.winit.generator.model.TableInfo;
+import com.winit.generator.util.DbUtil;
+import com.winit.generator.util.PropertyUtil;
+import com.winit.generator.util.StringUtil;
 import com.winit.generator.Constants;
 import com.winit.generator.config.Configuration;
 import com.winit.generator.framework.AbstractApplicationTask;
 import com.winit.generator.framework.context.ApplicationContext;
 import com.winit.generator.model.ColumnInfo;
-import com.winit.generator.model.TableInfo;
-import com.winit.generator.util.DbUtil;
-import com.winit.generator.util.PropertyUtil;
-import com.winit.generator.util.StringUtil;
 
 public class InitTask extends AbstractApplicationTask {
 
@@ -140,8 +140,8 @@ public class InitTask extends AbstractApplicationTask {
             logger.info("初始化任务异常", e);
             e.printStackTrace();
         } finally {
-            DbUtil.closeReso(conn, null, tableRS);
-            DbUtil.closeReso(null, null, columnRS);
+            DbUtil.closeConn(conn, null, tableRS);
+            DbUtil.closeConn(null, null, columnRS);
         }
         
         return false;

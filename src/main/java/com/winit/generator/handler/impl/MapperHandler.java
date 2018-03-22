@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.winit.generator.config.Configuration;
 import com.winit.generator.handler.BaseHandler;
+import com.winit.generator.config.Configuration;
 import com.winit.generator.model.MapperInfo;
 
 public class MapperHandler extends BaseHandler<MapperInfo> {
@@ -19,7 +19,7 @@ public class MapperHandler extends BaseHandler<MapperInfo> {
     }
     
     @Override
-    public void combileParams(MapperInfo info) {
+    public void combineParams(MapperInfo info) {
       //<result column="SU_ROUTE_CODE" jdbcType="VARCHAR" property="suRouteCode" />
         this.param.put("namespace", info.getNamespace());
         this.param.put("entityType", info.getEntityInfo().getPackageClassName());

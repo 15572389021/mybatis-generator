@@ -19,7 +19,7 @@ import com.winit.generator.Constants;
  * ClassName:PropertyUtil <br/>
  * Function: 属性文件工具类. <br/>
  * Date:     2015年11月13日 下午6:01:19 <br/>
- * @author   qiyongkang
+ * @author   
  * @version  
  * @since    JDK 1.6
  * @see 	 
@@ -39,20 +39,20 @@ public class PropertyUtil {
      * 
      * loadProp:加载属性文件. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param fileName
      * @since JDK 1.6
      */
     public static void loadProp(String fileName) {
-        InputStream is = null;
+
         Reader reader = null;
-        
+
         //首先在classpath中找，如果找不到，则在工作目录下找
-        is = PropertyUtil.class.getClassLoader().getResourceAsStream(fileName);
+        InputStream is = PropertyUtil.class.getClassLoader().getResourceAsStream(fileName);
+
         logger.info("在classpath下找{},是否找到：{}", fileName, is == null ? "否" : "是");
         if (is == null) {
             //没找到，则在使用绝对路径，找到jar所在的根目录
-            //String rootPath = System.getProperty("user.dir");
             String rootPath = System.getProperty("logDirPath");
             logger.info("rootPath:{}", rootPath);
             
@@ -114,7 +114,7 @@ public class PropertyUtil {
      * 
      * loadProp:加载属性文件. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param fileName
      * @since JDK 1.6
      */
@@ -189,7 +189,7 @@ public class PropertyUtil {
      * 
      * getInputStremByFileName:根据文件名获取输入流. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param fileName
      * @return
      * @since JDK 1.6
@@ -228,7 +228,7 @@ public class PropertyUtil {
      * 
      * getInputStremByFileName:根据文件名获取输入流. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param fileName
      * @return
      * @since JDK 1.6
@@ -271,7 +271,7 @@ public class PropertyUtil {
      * 
      * getValueByKey:通过key取对应的值. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param key
      * @return
      * @since JDK 1.6
@@ -299,7 +299,7 @@ public class PropertyUtil {
      * 
      * getValueByKey:通过key取对应的值. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param key
      * @return
      * @since JDK 1.6
@@ -327,7 +327,7 @@ public class PropertyUtil {
      * 
      * setProperty:设置一个属性. <br/>
      *
-     * @author qiyongkang
+     * @author 
      * @param key
      * @param value
      * @since JDK 1.6
@@ -341,7 +341,7 @@ public class PropertyUtil {
      * 这个方法可以获取jar文件所在文件夹的路径，不包含lib包。
      * <p/>
      * 
-     * @author qiyongkang
+     * @author 
      * @return 配置路径对象
      * @since JDK 1.6
      */
